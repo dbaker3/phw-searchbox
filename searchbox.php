@@ -73,7 +73,7 @@ $databasesList = <<<EOT
       <option value="sciences">Sciences</option>
       <option value="sports">Sports &amp; Sports Science</option>
    </select>
-   <input type="submit" class="searchbutton" value="Search">
+   <input type="submit" class="searchbutton" value="Browse">
 </form>
 EOT;
 return $databasesList; 
@@ -124,7 +124,7 @@ $referenceList = <<<EOT
       <option value="sports">Sports &amp; Sports Science (including Nutrition and Exercise)</option>
       <option value="theatre">Theatre, Film &amp; Dance</option>     
    </select>        
-   <input type="submit" class="searchbutton" value="Search">
+   <input type="submit" class="searchbutton" value="Browse">
 </form>
 EOT;
 return $referenceList;
