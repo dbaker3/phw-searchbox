@@ -56,7 +56,7 @@ ul.tab-links {
 }
  
 .tab-links a:hover {
-   background:#8C0000;
+   background:#4D4F22;
    text-decoration:none;
 }
  
@@ -71,7 +71,7 @@ li.active a, li.active a:hover {
 .tab-content {
    padding:15px;
    background:#FFFAF0;
-   height:10em;
+   height:12em;
    border:1px solid black; 
    border-top:none;
    overflow:hidden;
@@ -94,17 +94,15 @@ li.active a, li.active a:hover {
 /*----- Form Elements -----*/
 input.searchbox,
 select.searchbox {
-  /* height:30px; */
-  /* width:350px;*/
    height:2em;
    width:78%;
    font-size:1.4em;
    border:1px solid #000;
    padding-left:5px;
    vertical-align:middle;
-   border-radius:2px;
    -webkit-border-radius:2px;
    -moz-border-radius:2px;
+   border-radius:2px;
 }
 
 /* Display MCSearch icon */
@@ -117,8 +115,6 @@ select.searchbox {
 }
 
 select.searchbox {
-/* height:30px;
-   width:350px; */
    height:2em;
    width:78%;
 }
@@ -134,25 +130,54 @@ input.searchbutton {
    float:right;
 } input.searchbutton:hover {background-color:#0099d4; color:#eeeeee; transition:all linear 0.15s;}
 
-/* Accordion on smaller screens */
+/* Accordion interface on smaller screens */
 @media all and (max-width:640px){
-         .tabs {width:100%;}
+         .tabs {
+            width:100%;
+         }
 			.tab-links li, .tab-links a {
             width:100%; 
             float:none;
          }
-         ul.tab-links {padding-left:0;}
-         .tabs h2 {font-size:1.4em;}
-         li.active a {background:#484A20;color:#FEFEFE;border-bottom:none;}
-         .tab-links a:hover {background:#484a20;color:#fefefe;}
-         li.active a:hover {background:#484a20;color:#fefefe;border-bottom:none;}
-         input.searchbutton {font-size:1em;width:20%;}
-         input.searchbox,select.searchbox {font-size:1em;width:78%;}
-         #ebscohostsearchtext {text-indent:45px;}
+         ul.tab-links {
+            padding-left:0;
+         }
+         .tabs h2 {
+            font-size:auto;
+            width:98%;
+         }
+         li.active a {
+            background:#4D4F22;
+            color:#FEFEFE;
+            border-bottom:none;
+         }
+         .tab-links a:hover {
+            background:#4D4F22;
+            color:#fefefe;
+         }
+         li.active a:hover {
+            background:#484a20;
+            color:#fefefe;
+            border-bottom:none
+         }
+         input.searchbutton {
+            font-size:1em;
+            width:20%;
+         }
+         input.searchbox,select.searchbox {
+            font-size:1em;
+            width:78%;
+         }
+         #ebscohostsearchtext {
+            text-indent:45px;
+         }
+         .tab-content{
+            height:8em;
+         }
          .tab-links li a {
-            border-radius:0;
             -webkit-border-radius:0;
             -moz-border-radius:0;
+            border-radius:0;
          }
          .tab-links li:last-child a {
             -webkit-border-bottom-right-radius: 2px;
