@@ -45,6 +45,7 @@ ul.tab-links {
    color:#FEFEFE;
    transition:all linear 0.15s;
    text-decoration:none;
+   text-align:center;
    border:1px solid black;
    width:100%; /*Fill width of li*/
    -webkit-border-top-right-radius: 2px;
@@ -138,6 +139,16 @@ input.searchbutton {
 			.tab-links li, .tab-links a {
             width:100%; 
             float:none;
+            text-align:left;
+         }
+         .tab-links a {
+            padding-left:2.5em;
+         }
+         .tab-links a:before {
+            font-family: icon-font;
+            content: "";
+            position: absolute;
+            left:1em;
          }
          ul.tab-links {
             padding-left:0;
@@ -150,6 +161,12 @@ input.searchbutton {
             background:#4D4F22;
             color:#FEFEFE;
             border-bottom:none;
+         }
+         li.active a:before {
+         font-family: icon-font;
+         content: "";
+         position: absolute;
+         left:1em;
          }
          .tab-links a:hover {
             background:#4D4F22;

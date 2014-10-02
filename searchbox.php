@@ -1,6 +1,7 @@
 <?php 
 /*
 P.H. Welshimer Tabbed Searchbox
+Code for each tab of searchbox
 */
 
 function getMCSearchBox() {
@@ -92,14 +93,14 @@ $referenceList = <<<EOT
       <option value="communication">Communication &amp; Media Studies</option>     
       <option value="education">Education</option>
       <option value="geography">Geography</option>     
-      <option value="history-ancient">History &raquo; Ancient &amp; Midieval</option>
+      <option value="history-ancient">History &raquo; Ancient &amp; Medieval</option>
       <option value="history-renaissance">History &raquo; Renaissance &amp; Reformation</option>     
       <option value="history-modern">History &raquo; Modern</option>
       <option value="history-united">History &raquo; United States</option>     
       <option value="history-world">History &raquo; World</option>
       <option value="journalism">Journalism</option>
       <option value="languages">Languages</option>
-      <option value="literature-cricicism">Literature &raquo; Criticism, the Book &amp; Other</option>     
+      <option value="literature-criticism">Literature &raquo; Criticism, the Book &amp; Other</option>     
       <option value="literature-american">Literature &raquo; American</option>
       <option value="literature-english">Literature &raquo; English</option>     
       <option value="literature-world">Literature &raquo; World</option>
