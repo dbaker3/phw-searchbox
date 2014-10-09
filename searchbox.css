@@ -8,7 +8,7 @@
    position:relative;
    display:inline-block;
    font-size:0.8em;
-
+   max-width:650px
 }
 
 .tabs h2 {
@@ -42,6 +42,7 @@ ul.tab-links {
    display:inline-block;
    background:#40abba;
    font-weight:bold;
+   font-size:1.2em;
    color:#FEFEFE;
    transition:all linear 0.15s;
    text-decoration:none;
@@ -143,6 +144,7 @@ input.searchbutton {
          }
          .tab-links a {
             padding-left:2.5em;
+            font-size:1em;
          }
          .tab-links a:before {
             font-family: icon-font;
@@ -154,7 +156,7 @@ input.searchbutton {
             padding-left:0;
          }
          .tabs h2 {
-            font-size:auto;
+            font-size:1.3em;
             width:98%;
          }
          li.active a {
