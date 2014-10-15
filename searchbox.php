@@ -131,6 +131,7 @@ EOT;
 return $referenceList;
 }
 
+/*
 // Create shortcode for script that checks GET variables.
 // This will go on the Databases and e-Reference pages to see what
 // option was chosen from the tabbed searchbox interface.
@@ -167,17 +168,4 @@ return $output;
 }
 
 add_shortcode( 'checkGetVarScript', 'checkGetVar' );
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+*/

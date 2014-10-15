@@ -13,6 +13,7 @@
 
 .tabs h2 {
    font-size:2em;
+   padding-bottom:0.5em;
 }
 
 
@@ -38,7 +39,7 @@ ul.tab-links {
 }
  
 .tab-links a {
-   padding:9px 15px;
+   padding:9px 0;
    display:inline-block;
    background:#40abba;
    font-weight:bold;
@@ -109,7 +110,7 @@ select.searchbox {
 
 /* Display MCSearch icon */
 #ebscohostsearchtext {
-   background-image:url("http://library.milligan.edu/wp-content/uploads/images/mcsearch_150px.png?ab4716");
+   background-image:url("mcsearch_150px.png");
    background-repeat:no-repeat;
    background-size: auto 90%;
    background-position: left center;
@@ -181,11 +182,11 @@ input.searchbutton {
          }
          input.searchbutton {
             font-size:1em;
-            width:20%;
+            width:25%;
          }
          input.searchbox,select.searchbox {
             font-size:1em;
-            width:78%;
+            width:73%;
          }
          #ebscohostsearchtext {
             text-indent:45px;
