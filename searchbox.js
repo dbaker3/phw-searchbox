@@ -6,18 +6,31 @@ jQuery(document).ready(function() {
    if (isItMobile() == true) {
       drawMobile();
    }
- 
+   
    jQuery('.tabs .tab-links a').on('click', function(e)  {
       var currentAttrValue = jQuery(this).attr('href');
       jQuery('.tabs ' + currentAttrValue).show().siblings().hide();
-      jQuery(this).parent('li').addClass('active').siblings().removeClass('active');       
+      jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
+      
+      /* Automatically select textbox when user switches tabs */
+      if (currentAttrValue == "#tab1") {
+         jQuery('input[name=ebscohostsearchtext]').focus();
+      }
+      else if (currentAttrValue == "#tab2") {
+         jQuery('input[name=q]').focus();
+      }
+      else if (currentAttrValue == "#tab3") {
+         jQuery('input[name=Find]').focus();
+      }
       
       /* Accordion stuff 9/23/14 - Move searchbox below appropriate tab when clicked */
       if (isItMobile() == true) {drawMobile();}
  
       e.preventDefault();
    });
+   jQuery('input[name=ebscohostsearchtext]').focus(); 
 });
+
 
 /* If window resized below threshold display searchbox below accordion tab */
 var windowWidth = jQuery(window).width();

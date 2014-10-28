@@ -57,13 +57,3 @@ add_shortcode( 'phw-searchbox-here', 'phwSearchbox');
 if (isset($_GET["dbmenuoption"]) || isset($_GET["refmenuoption"])) {
    wp_enqueue_script('topicsjs', plugins_url('topics.js', __FILE__), array('js-min'), '1.0.0', true);
 }
-      /*
-      echo "<script>";
-      echo "   jQuery('#" . htmlspecialchars($_GET["dbmenuoption"]) . "> li').addClass('open-item');";
-      echo "   jQuery('#" . htmlspecialchars($_GET["dbmenuoption"]) . " .acc-sublist').toggleClass('hidden');";
-      //echo "   location.href = location.href + '#" . htmlspecialchars($_GET["dbmenuoption"]) . "';";
-      echo "   window.location = '#" . htmlspecialchars($_GET["dbmenuoption"]) . "';";
-      echo "</script>";
-      */
-      
-   
