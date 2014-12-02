@@ -9,9 +9,9 @@ wp_enqueue_script('ebsco', 'http://support.ebscohost.com/eit/scripts/ebscohostse
 $MCSearchBox = <<<EOT
 <div id="eds_search">
 	<form id="ebscohostCustomSearchBox" action="" onsubmit="return ebscoHostSearchGo(this);" method="post">
-      <h2>Search everything</h2>
+      <h2>Search Almost Everything</h2>
 		<input id="ebscohostwindow" name="ebscohostwindow" type="hidden" value="1">
-		<input id="ebscohosturl" name="ebscohosturl" type="hidden" value="http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=0&custid=s8886565&groupid=main&profid=edsmain&mode=bool&lang=en&authtype=ip,guest">
+		<input id="ebscohosturl" name="ebscohosturl" type="hidden" value="https://milligan.idm.oclc.org/login?url=http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=0&custid=s8886565&groupid=main&profid=edsmain&mode=bool&lang=en&authtype=ip,guest">
 		<input id="ebscohostsearchsrc" name="ebscohostsearchsrc" type="hidden" value="db">
 		<input id="ebscohostsearchmode" name="ebscohostsearchmode" type="hidden" value="+">
 		<input id="ebscohostkeywords" name="ebscohostkeywords" type="hidden" value="">
@@ -27,7 +27,7 @@ function getWorldCatSearchBox() {
 $worldCatSearchBox = <<<EOT
 <div id="worldcat_search">
    <form id="worldcat" method="get" action="http://milligan.worldcat.org/search" target="_blank">
-      <h2>Milligan Catalog and libraries worldwide</h2>
+      <h2>Milligan &amp; Libraries Worldwide</h2>
       <input required type="text" name="q" id="q" class="searchbox">
       <input type="submit" value="Search" name="search" id="worldcatsearch" class="searchbutton">
    </form>
@@ -130,42 +130,3 @@ $referenceList = <<<EOT
 EOT;
 return $referenceList;
 }
-
-/*
-// Create shortcode for script that checks GET variables.
-// This will go on the Databases and e-Reference pages to see what
-// option was chosen from the tabbed searchbox interface.
-function checkGetVar($atts) { 
-$code = <<<EOT
-<script>
-function getQueryVariable(variable) // thanks to CSS-tricks.com for getQueryVariable
-{
-   var query = window.location.search.substring(1);
-   var vars = query.split("&");
-   for (var i=0;i<vars.length;i++) {
-      var pair = vars[i].split("=");
-      if(pair[0] == variable){return pair[1];}
-   }
-   return(false);
-}
-
-var dbvar = getQueryVariable("dbmenuoption");
-var refvar = getQueryVariable("refmenuoption");
-
-if (dbvar) { // sent from database tab. We're on the databases page. dbvar contains id to jump to.
-   $(document).ready(function()) {
-      // hide list (since js-min.js script will toggle it and unhide it) and jump to it
-      
-   }
-}
-elsif (refvar) { // sent from eReference tab. We're on the ereferences page. refvar contains id to jump to.
-      // hide list (since js-min.js script will toggle it and unhide it) and jump to it
-}
-
-</script>
-EOT;
-return $output;
-}
-
-add_shortcode( 'checkGetVarScript', 'checkGetVar' );
-*/
