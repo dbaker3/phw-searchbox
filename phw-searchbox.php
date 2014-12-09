@@ -10,11 +10,10 @@ Author URI: https://github.com/dbaker3/
 
 /* Thanks to inspirationalpixels.com for initial tab code */
 
+add_action('wp_enqueue_scripts', 'enqueueExtFiles');
+
 function phwSearchbox($atts) {
    include_once 'searchbox.php';
-
-   wp_enqueue_script('searchboxjs', plugins_url('searchbox.js', __FILE__));
-   wp_enqueue_style('searchboxcss', plugins_url('searchbox.css', __FILE__, array(), '20140908', 'all'));
 
    $output = '<div class="tabs">';
    $output .= '   <ul class="tab-links">';
@@ -49,6 +48,11 @@ function phwSearchbox($atts) {
    $output .= '</div>';
 
 	return $output;
+}
+
+function enqueueExtFiles() {
+   wp_enqueue_script('searchboxjs', plugins_url('searchbox.js', __FILE__));
+   wp_enqueue_style('searchboxcss', plugins_url('searchbox.css', __FILE__, array(), '20140908', 'all'));
 }
 
 add_shortcode( 'phw-searchbox-here', 'phwSearchbox');

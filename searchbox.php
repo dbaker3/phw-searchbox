@@ -8,14 +8,14 @@ function getMCSearchBox() {
 wp_enqueue_script('ebsco', 'http://support.ebscohost.com/eit/scripts/ebscohostsearch.js', false, '20140909', true);
 $MCSearchBox = <<<EOT
 <div id="eds_search">
-	<form id="ebscohostCustomSearchBox" action="" onsubmit="return ebscoHostSearchGo(this);" method="post">
+	<form id="ebscohostCustomSearchBox" onsubmit="return ebscoHostSearchGo(this);" method="post">
       <h2>Search Almost Everything</h2>
 		<input id="ebscohostwindow" name="ebscohostwindow" type="hidden" value="1">
-		<input id="ebscohosturl" name="ebscohosturl" type="hidden" value="https://milligan.idm.oclc.org/login?url=http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=0&custid=s8886565&groupid=main&profid=edsmain&mode=bool&lang=en&authtype=ip,guest">
+		<input id="ebscohosturl" name="ebscohosturl" type="hidden" value="https://milligan.idm.oclc.org/login?url=http://search.ebscohost.com/login.aspx?direct=true&amp;site=eds-live&amp;scope=site&amp;type=0&amp;custid=s8886565&amp;groupid=main&amp;profid=edsmain&amp;mode=bool&amp;lang=en&amp;authtype=ip,guest">
 		<input id="ebscohostsearchsrc" name="ebscohostsearchsrc" type="hidden" value="db">
 		<input id="ebscohostsearchmode" name="ebscohostsearchmode" type="hidden" value="+">
 		<input id="ebscohostkeywords" name="ebscohostkeywords" type="hidden" value="">
-		<input required id="ebscohostsearchtext" class="searchbox" name="ebscohostsearchtext" type="text">
+		<input title="Search MCSearch" required id="ebscohostsearchtext" class="searchbox" name="ebscohostsearchtext" type="text">
 		<input id="edssearch" type="submit" value="Search" class="searchbutton">
 	</form>
 </div>
@@ -28,7 +28,7 @@ $worldCatSearchBox = <<<EOT
 <div id="worldcat_search">
    <form id="worldcat" method="get" action="http://milligan.worldcat.org/search" target="_blank">
       <h2>Milligan &amp; Libraries Worldwide</h2>
-      <input required type="text" name="q" id="q" class="searchbox">
+      <input title="Search Milligan Catalog" required type="text" name="q" id="q" class="searchbox">
       <input type="submit" value="Search" name="search" id="worldcatsearch" class="searchbutton">
    </form>
 </div>
@@ -41,7 +41,7 @@ $journalSearchBox = <<<EOT
 <div id="atoz_search">
    <form name="frmAdvSearch" action="https://atoz.ebsco.com/titles/searchresults/12279" method="get" accept-charset="ISO-8859-1" target="_blank">
       <h2>Journal Titles</h2>
-      <input required id="Find" type="text" name="Find" class="searchbox" value="">
+      <input title="Search Journal Titles" required id="Find" type="text" name="Find" class="searchbox" value="">
       <input id="atozsearch" value="Search" type="submit" class="searchbutton">
       <input type="hidden" name="GetResourcesBy" value="TitleNameSearch">
       <input type="hidden" name="resourceTypeName" value="journalsOnly">
@@ -56,7 +56,7 @@ function getDatabasesList() {
 $databasesList = <<<EOT
 <form id="databases" method="get" action="http://library.milligan.edu/databases/" target="_blank">
    <h2>Databases</h2>
-   <select class="searchbox" name="dbmenuoption">
+   <select title="Database Topics" class="searchbox" name="dbmenuoption">
       <option>Choose a topic...</option>
       <option value="general">General &amp; Multidisciplinary</option>
       <option value="arts">Arts &amp; Theater</option>
@@ -84,7 +84,7 @@ function getReferenceList() {
 $referenceList = <<<EOT
 <form id="reference" method="get" action="http://library.milligan.edu/ereference/" target="_blank">
    <h2>e-Reference</h2>
-   <select class="searchbox" name="refmenuoption">
+   <select title="Reference Topics" class="searchbox" name="refmenuoption">
       <option>Choose a topic...</option>
       <option value="anthropology">Anthropology &amp; Cultural Studies</option>
       <option value="art">Art</option>
