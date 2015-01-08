@@ -3,6 +3,11 @@
 
 jQuery(document).ready(function() {
 
+   /* progressive javascript - hide inactive tabs and reveal as clicked on */
+   jQuery('.tab-links li:first').addClass('active');
+   jQuery('.tab').removeClass('active');
+   jQuery('.tab:first').addClass('active');
+
    if (isItMobile() == true) {
       drawMobile();
    }
@@ -13,6 +18,7 @@ jQuery(document).ready(function() {
       jQuery(this).parent('li').addClass('active').siblings().removeClass('active');
       
       /* Automatically select textbox when user switches tabs */
+      jQuery(this).blur(); // blur if tab contains no textbox
       if (currentAttrValue == "#tab1") {
          jQuery('input[name=ebscohostsearchtext]').focus();
       }
@@ -83,5 +89,7 @@ function drawMobile() {
 function drawDesktop() {
    jQuery('.tab-content').insertAfter('.tab-links');
    /* Switch back to desktop sites */
-   document.getElementById('worldcat').action = "http://milligan.worldcat.org/search";
+   if ( $theElement = document.getElementById('worldcat') ) {
+      $theElement.action = "http://milligan.worldcat.org/search";
+   }
 }

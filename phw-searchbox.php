@@ -17,11 +17,12 @@ function phwSearchbox($atts) {
 
    $output = '<div class="tabs">';
    $output .= '   <ul class="tab-links">';
-   $output .= '      <li class="active"><a href="#tab1">MCSearch</a></li>';
+   $output .= '      <li><a href="#tab1">MCSearch</a></li>';
    $output .= '      <li><a href="#tab2">WorldCat</a></li>';
    $output .= '      <li><a href="#tab3">Journals</a></li>';
    $output .= '      <li><a href="#tab4">Databases</a></li>';
    $output .= '      <li><a href="#tab5">e-Reference</a></li>';
+   $output .= '      <li><img alt="New feature" src="' . plugins_url('badgenew.png', __FILE__) . '" id="badgenew" /><a href="#tab6">Tutorials</a></li>';
    $output .= '   </ul>';
    
    $output .= '   <div class="tab-content">';
@@ -29,21 +30,26 @@ function phwSearchbox($atts) {
    $output .= getMCSearchBox();
    $output .= '      </div>';
          
-   $output .= '      <div id="tab2" class="tab">';
+   $output .= '      <div id="tab2" class="tab active">';
    $output .= getWorldCatSearchBox(); 
    $output .= '      </div>';
          
-   $output .= '      <div id="tab3" class="tab">';
+   $output .= '      <div id="tab3" class="tab active">';
    $output .= getJournalSearchBox();
    $output .= '      </div>';
          
-   $output .= '      <div id="tab4" class="tab">';
+   $output .= '      <div id="tab4" class="tab active">';
    $output .= getDatabasesList(); 
    $output .= '      </div>';
          
-   $output .= '      <div id="tab5" class="tab">';
+   $output .= '      <div id="tab5" class="tab active">';
    $output .= getReferenceList(); 
    $output .= '      </div>';
+   
+   $output .= '      <div id="tab6" class="tab active">';
+   $output .= getTutorialsList(); 
+   $output .= '      </div>';
+   
    $output .= '   </div>';
    $output .= '</div>';
 
@@ -57,7 +63,7 @@ function enqueueExtFiles() {
 
 add_shortcode( 'phw-searchbox-here', 'phwSearchbox');
 
-/* Check if user selected a topic for Databases or e-References pages, then scrolls to topic on that page */
-if (isset($_GET["dbmenuoption"]) || isset($_GET["refmenuoption"])) {
+/* Check if user selected a topic for Databases or e-References pages, then scrolls to topic on that page | also checks if tutorial is selected */
+if ( isset($_GET["dbmenuoption"]) || isset($_GET["refmenuoption"]) || isset($_GET["tutorialoption"]) ) {
    wp_enqueue_script('topicsjs', plugins_url('topics.js', __FILE__), array('js-min'), '1.0.0', true);
 }

@@ -130,3 +130,24 @@ $referenceList = <<<EOT
 EOT;
 return $referenceList;
 }
+
+function getTutorialsList() {
+$tutorialsList = <<<EOT
+<form id="tutorials" method="get" action="">
+   <h2>Learn to use research tools</h2>
+   <select title="Tutorial Topics" class="searchbox" name="tutorialoption">
+      <option>Choose a tutorial...</option>
+      <option value="http://gots.library.milligan.edu/guide_on_the_side/tutorial/introduction-to-mcsearch">Introduction to MCSearch!</option>
+      <option value="http://gots.library.milligan.edu/guide_on_the_side/tutorial/mcsearch-advanced-strategies">MCSearch: Advanced Strategies</option>
+   </select>
+   <input type="submit" class="searchbutton" value="View">
+   <noscript>
+      <ul>
+         <li><a href="http://gots.library.milligan.edu/guide_on_the_side/tutorial/introduction-to-mcsearch/single-page">Introduction to MCSearch!</a></li>
+         <li><a href="http://gots.library.milligan.edu/guide_on_the_side/tutorial/mcsearch-advanced-strategies/single-page">MCSearch: Advanced Strategies</a></li>
+      <ul>
+   </noscript>
+</form>
+EOT;
+return $tutorialsList; 
+}

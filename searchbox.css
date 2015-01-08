@@ -34,7 +34,7 @@ ul.tab-links {
    margin-bottom:-1px;
    float:left;
    list-style:none;
-   width:20%;
+   width:16.666%;
 
 }
  
@@ -43,7 +43,7 @@ ul.tab-links {
    display:inline-block;
    background:#40abba;
    font-weight:bold;
-   font-size:1.2em;
+   font-size:1.1em;
    color:#FEFEFE;
    transition:all linear 0.15s;
    text-decoration:none;
@@ -56,11 +56,32 @@ ul.tab-links {
    -moz-border-radius-topleft: 2px;
    border-top-right-radius: 2px;
    border-top-left-radius: 2px;
+   border-right: none;
+
+}
+
+.tab-links li:last-child a {
+   border-right: 1px solid black;
+   -webkit-border-bottom-right-radius: 0;
+   -moz-border-radius-bottomright: 0;
+   border-bottom-right-radius: 0;
 }
  
 .tab-links a:hover {
    background:#ea7125;
    text-decoration:none;
+}
+
+.tab-links a:visited {
+   color: #FEFEFE;
+}
+
+.tab-links a:hover {
+   color: #fefefe;
+}
+
+.tab-links li.active a:visited {
+   color: #4c4c4c;
 }
  
 li.active a, li.active a:hover {
@@ -74,7 +95,8 @@ li.active a, li.active a:hover {
 .tab-content {
    padding:15px;
    background:#f9f9f9;
-   height:11em;
+   height: 11em;
+   min-height:11em;
    border:1px solid black; 
    border-top:none;
    overflow:hidden;
@@ -88,6 +110,7 @@ li.active a, li.active a:hover {
  
 .tab {
    display:none;
+   margin-bottom:3.4em;
 }
  
 .tab.active {
@@ -133,6 +156,14 @@ input.searchbutton {
    float:right;
 } input.searchbutton:hover {background-color:#ea7125; color:#eeeeee; transition:all linear 0.15s;}
 
+#badgenew {
+   display: block;
+   position: absolute;
+   top: -13px;
+   right: -9px;
+   width: 36px;
+}
+
 /* Accordion interface on smaller screens */
 @media all and (max-width:640px){
          .tabs {
@@ -146,6 +177,7 @@ input.searchbutton {
          .tab-links a {
             padding-left:2.5em;
             font-size:1em;
+            border-right: 1px solid black;
          }
          .tab-links a:before {
             font-family: icon-font;
@@ -160,9 +192,9 @@ input.searchbutton {
             font-size:1.3em;
             width:98%;
          }
-         li.active a {
+         .tab-links li.active a, li.active a:visited {
             background:#ea7125;
-            color:#FEFEFE;
+            color:#FEFEFE !important;
             border-bottom:none;
          }
          li.active a:before {
@@ -214,5 +246,8 @@ input.searchbutton {
             -moz-border-radius-topleft: 2px;
             border-top-right-radius: 2px;
             border-top-left-radius: 2px;
+         }
+         #badgenew {
+            display: none;
          }
 }

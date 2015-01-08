@@ -6,6 +6,7 @@
 jQuery(document).ready(function() {
 var databasesVar = getQueryVariable("dbmenuoption");
 var ereferenceVar = getQueryVariable("refmenuoption");
+var tutorialVar = getQueryVariable("tutorialoption");
 
 if (databasesVar) {
    jQuery("#" + databasesVar + " > li").addClass("open-item");
@@ -16,6 +17,9 @@ else if (ereferenceVar) {
    jQuery("#" + ereferenceVar + " > li").addClass("open-item");
    jQuery("#" + ereferenceVar + " .acc-sublist").toggleClass("hidden");
    window.location.href = "#" + ereferenceVar;
+}
+else if (tutorialVar) {
+   window.location.href = unescape(tutorialVar);
 }
 
 });
