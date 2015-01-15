@@ -57,13 +57,13 @@ function phwSearchbox($atts) {
 }
 
 function enqueueExtFiles() {
-   wp_enqueue_script('searchboxjs', plugins_url('searchbox.js', __FILE__));
-   wp_enqueue_style('searchboxcss', plugins_url('searchbox.css', __FILE__, array(), '20140908', 'all'));
+   wp_enqueue_script('searchboxjs', plugins_url('searchbox.js', __FILE__), array('jquery'), filemtime(dirname(__FILE__) . '/searchbox.js'), false);
+   wp_enqueue_style('searchboxcss', plugins_url('searchbox.css', __FILE__), array(), filemtime(dirname(__FILE__) . '/searchbox.css'), 'all');
 }
 
 add_shortcode( 'phw-searchbox-here', 'phwSearchbox');
 
 /* Check if user selected a topic for Databases or e-References pages, then scrolls to topic on that page | also checks if tutorial is selected */
 if ( isset($_GET["dbmenuoption"]) || isset($_GET["refmenuoption"]) || isset($_GET["tutorialoption"]) ) {
-   wp_enqueue_script('topicsjs', plugins_url('topics.js', __FILE__), array('js-min'), '1.0.0', true);
+   wp_enqueue_script('topicsjs', plugins_url('topics.js', __FILE__), array('js-min'), filemtime(dirname(__FILE__) . '/topics.js'), true);
 }
