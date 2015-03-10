@@ -139,12 +139,18 @@ $tutorialsList = <<<EOT
       <option>Choose a tutorial...</option>
       <option value="http://gots.library.milligan.edu/guide_on_the_side/tutorial/introduction-to-mcsearch">Introduction to MCSearch!</option>
       <option value="http://gots.library.milligan.edu/guide_on_the_side/tutorial/mcsearch-advanced-strategies">MCSearch: Advanced Strategies</option>
+      <option value="http://gots.library.milligan.edu/guide_on_the_side/tutorial/citationcreator">MCSearch: Citation Creator</option>
+      <option value="http://gots.library.milligan.edu/guide_on_the_side/tutorial/abiinform-complete-business-database">ABI/INFORM Complete: Business Database</option>
+      <option value="http://gots.library.milligan.edu/guide_on_the_side/tutorial/atla-scripture-search">ATLA Scripture Search</option>
    </select>
    <input type="submit" class="searchbutton" value="View">
    <noscript>
       <ul>
          <li><a href="http://gots.library.milligan.edu/guide_on_the_side/tutorial/introduction-to-mcsearch/single-page">Introduction to MCSearch!</a></li>
          <li><a href="http://gots.library.milligan.edu/guide_on_the_side/tutorial/mcsearch-advanced-strategies/single-page">MCSearch: Advanced Strategies</a></li>
+         <li><a href="http://gots.library.milligan.edu/guide_on_the_side/tutorial/citationcreator/single-page">MCSearch: Citation Creator</a></li>
+         <li><a href="http://gots.library.milligan.edu/guide_on_the_side/tutorial/abiinform-complete-business-database/single-page">ABI/INFORM Complete: Business Database</a></li>
+         <li><a href="http://gots.library.milligan.edu/guide_on_the_side/tutorial/atla-scripture-search/single-page">ATLA Scripture Search</a></li>
       <ul>
    </noscript>
 </form>
