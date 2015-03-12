@@ -5,13 +5,13 @@ Code for each tab of searchbox
 */
 
 function getMCSearchBox() {
-wp_enqueue_script('ebsco', 'http://support.ebscohost.com/eit/scripts/ebscohostsearch.js', false, '20140909', true);
+wp_enqueue_script('ebsco', 'https://support.ebscohost.com/eit/scripts/ebscohostsearch.js', false, '20140909', true);
 $MCSearchBox = <<<EOT
 <div id="eds_search">
 	<form id="ebscohostCustomSearchBox" onsubmit="return ebscoHostSearchGo(this);" method="post">
       <h2>Search Almost Everything</h2>
 		<input id="ebscohostwindow" name="ebscohostwindow" type="hidden" value="1">
-		<input id="ebscohosturl" name="ebscohosturl" type="hidden" value="https://milligan.idm.oclc.org/login?url=http://search.ebscohost.com/login.aspx?direct=true&amp;site=eds-live&amp;scope=site&amp;type=0&amp;custid=s8886565&amp;groupid=main&amp;profid=edsmain&amp;mode=bool&amp;lang=en&amp;authtype=ip,guest">
+		<input id="ebscohosturl" name="ebscohosturl" type="hidden" value="https://milligan.idm.oclc.org/login?url=https://search.ebscohost.com/login.aspx?direct=true&amp;site=eds-live&amp;scope=site&amp;type=0&amp;custid=s8886565&amp;groupid=main&amp;profid=edsmain&amp;mode=bool&amp;lang=en&amp;authtype=ip,guest">
 		<input id="ebscohostsearchsrc" name="ebscohostsearchsrc" type="hidden" value="db">
 		<input id="ebscohostsearchmode" name="ebscohostsearchmode" type="hidden" value="+">
 		<input id="ebscohostkeywords" name="ebscohostkeywords" type="hidden" value="">
@@ -26,7 +26,7 @@ return $MCSearchBox;
 function getWorldCatSearchBox() {
 $worldCatSearchBox = <<<EOT
 <div id="worldcat_search">
-   <form id="worldcat" method="get" action="http://milligan.worldcat.org/search" target="_blank">
+   <form id="worldcat" method="get" action="https://milligan.worldcat.org/search" target="_blank">
       <h2>Milligan &amp; Libraries Worldwide</h2>
       <input title="Search Milligan Catalog" required type="text" name="q" id="q" class="searchbox">
       <input type="submit" value="Search" name="search" id="worldcatsearch" class="searchbutton">
@@ -54,7 +54,7 @@ return $journalSearchBox;
 
 function getDatabasesList() {
 $databasesList = <<<EOT
-<form id="databases" method="get" action="http://library.milligan.edu/databases/" target="_blank">
+<form id="databases" method="get" action="https://library.milligan.edu/databases/" target="_blank">
    <h2>Databases</h2>
    <select title="Database Topics" class="searchbox" name="dbmenuoption">
       <option>Choose a topic...</option>
@@ -82,7 +82,7 @@ return $databasesList;
 
 function getReferenceList() {
 $referenceList = <<<EOT
-<form id="reference" method="get" action="http://library.milligan.edu/ereference/" target="_blank">
+<form id="reference" method="get" action="https://library.milligan.edu/ereference/" target="_blank">
    <h2>e-Reference</h2>
    <select title="Reference Topics" class="searchbox" name="refmenuoption">
       <option>Choose a topic...</option>
