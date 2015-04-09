@@ -156,14 +156,6 @@ input.searchbutton {
    float:right;
 } input.searchbutton:hover {background-color:#ea7125; color:#eeeeee; transition:all linear 0.15s;}
 
-#badgenew {
-   display: block;
-   position: absolute;
-   top: -13px;
-   right: -9px;
-   width: 36px;
-}
-
 /* Accordion interface on smaller screens */
 @media all and (max-width:640px){
          .tabs {
@@ -246,8 +238,5 @@ input.searchbutton {
             -moz-border-radius-topleft: 2px;
             border-top-right-radius: 2px;
             border-top-left-radius: 2px;
-         }
-         #badgenew {
-            display: none;
          }
 }

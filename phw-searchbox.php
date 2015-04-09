@@ -22,7 +22,7 @@ function phwSearchbox($atts) {
    $output .= '      <li><a href="#tab3">Journals</a></li>';
    $output .= '      <li><a href="#tab4">Databases</a></li>';
    $output .= '      <li><a href="#tab5">e-Reference</a></li>';
-   $output .= '      <li><img alt="New feature" src="' . plugins_url('badgenew.png', __FILE__) . '" id="badgenew" /><a href="#tab6">Tutorials</a></li>';
+   $output .= '      <li><a href="#tab6">Tutorials</a></li>';
    $output .= '   </ul>';
    
    $output .= '   <div class="tab-content">';
