@@ -5,7 +5,6 @@ Code for each tab of searchbox
 */
 
 function getMCSearchBox() {
-wp_enqueue_script('ebsco', 'https://support.ebscohost.com/eit/scripts/ebscohostsearch.js', false, '20140909', true);
 $MCSearchBox = <<<EOT
 <div id="eds_search">
 	<form id="ebscohostCustomSearchBox" onsubmit="return ebscoHostSearchGo(this);" method="post">
