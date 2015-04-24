@@ -156,6 +156,10 @@ input.searchbutton {
    float:right;
 } input.searchbutton:hover {background-color:#ea7125; color:#eeeeee; transition:all linear 0.15s;}
 
+select > .selectbox-text {
+   display: none;
+}
+
 /* Accordion interface on smaller screens */
 @media all and (max-width:640px){
          .tabs {
