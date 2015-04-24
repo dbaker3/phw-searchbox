@@ -135,14 +135,18 @@ $tutorialsList = <<<EOT
 <form id="tutorials" method="get" action="">
    <h2>Learn to use Services &amp; Research Tools</h2>
    <select title="Tutorial Topics" class="searchbox" name="tutorialoption">
-      <option>Choose a tutorial...</option>
-      <option value="http://gots.library.milligan.edu/guide_on_the_side/tutorial/introduction-to-mcsearch">Introduction to MCSearch!</option>
-      <option value="http://gots.library.milligan.edu/guide_on_the_side/tutorial/mcsearch-advanced-strategies">MCSearch: Advanced Strategies</option>
-      <option value="http://gots.library.milligan.edu/guide_on_the_side/tutorial/citationcreator">MCSearch: Citation Creator</option>
-      <option value="http://gots.library.milligan.edu/guide_on_the_side/tutorial/abiinform-complete-business-database">ABI/INFORM Complete: Business Database</option>
-      <option value="http://gots.library.milligan.edu/guide_on_the_side/tutorial/atla-scripture-search">ATLA Scripture Search</option>
-      <option value="http://gots.library.milligan.edu/guide_on_the_side/tutorial/learning-express-library">LearningExpress Library</option>
-      <option value="http://gots.library.milligan.edu/guide_on_the_side/tutorial/renewing-library-materials">Renewing Library Materials</option>
+      <option selected disabled class="selectbox-text">Choose a tutorial...</option>
+      <optgroup label="Research Tools">
+         <option value="http://gots.library.milligan.edu/guide_on_the_side/tutorial/introduction-to-mcsearch">MCSearch: Introduction to MCSearch!</option>
+         <option value="http://gots.library.milligan.edu/guide_on_the_side/tutorial/mcsearch-advanced-strategies">MCSearch: Advanced Strategies</option>
+         <option value="http://gots.library.milligan.edu/guide_on_the_side/tutorial/citationcreator">MCSearch: Citation Creator</option>
+         <option value="http://gots.library.milligan.edu/guide_on_the_side/tutorial/abiinform-complete-business-database">ABI/INFORM Complete: Business Database</option>
+         <option value="http://gots.library.milligan.edu/guide_on_the_side/tutorial/atla-scripture-search">ATLA: Scripture Search</option>
+         <option value="http://gots.library.milligan.edu/guide_on_the_side/tutorial/learning-express-library">LearningExpress Library</option>
+      </optgroup>
+      <optgroup label="Library Services">
+         <option value="http://gots.library.milligan.edu/guide_on_the_side/tutorial/renewing-library-materials">Renewing Library Materials</option>
+      </optgroup>
    </select>
    <input type="submit" class="searchbutton" value="View">
    <noscript>
