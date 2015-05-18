@@ -145,6 +145,7 @@ $tutorialsList = <<<EOT
          <option value="http://gots.library.milligan.edu/guide_on_the_side/tutorial/learning-express-library">LearningExpress Library</option>
       </optgroup>
       <optgroup label="Library Services">
+         <option value="http://gots.library.milligan.edu/guide_on_the_side/tutorial/interlibraryloan">Interlibrary Loan</option>
          <option value="http://gots.library.milligan.edu/guide_on_the_side/tutorial/renewing-library-materials">Renewing Library Materials</option>
       </optgroup>
    </select>
@@ -157,6 +158,7 @@ $tutorialsList = <<<EOT
          <li><a href="http://gots.library.milligan.edu/guide_on_the_side/tutorial/abiinform-complete-business-database/single-page">ABI/INFORM Complete: Business Database</a></li>
          <li><a href="http://gots.library.milligan.edu/guide_on_the_side/tutorial/atla-scripture-search/single-page">ATLA Scripture Search</a></li>
          <li><a href="http://gots.library.milligan.edu/guide_on_the_side/tutorial/learning-express-library/single-page">LearningExpress Library</a></li>
+         <li><a href="http://gots.library.milligan.edu/guide_on_the_side/tutorial/interlibraryloan/single-page">Interlibrary Loan</a></li>
          <li><a href="http://gots.library.milligan.edu/guide_on_the_side/tutorial/renewing-library-materials/single-page">Renewing Library Materials</a></li>
       <ul>
    </noscript>
