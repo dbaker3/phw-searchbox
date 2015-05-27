@@ -160,7 +160,7 @@ $tutorialsList = <<<EOT
          <li><a href="http://gots.library.milligan.edu/guide_on_the_side/tutorial/learning-express-library/single-page">LearningExpress Library</a></li>
          <li><a href="http://gots.library.milligan.edu/guide_on_the_side/tutorial/interlibraryloan/single-page">Interlibrary Loan</a></li>
          <li><a href="http://gots.library.milligan.edu/guide_on_the_side/tutorial/renewing-library-materials/single-page">Renewing Library Materials</a></li>
-      <ul>
+      </ul>
    </noscript>
 </form>
 EOT;
