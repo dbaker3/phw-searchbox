@@ -57,8 +57,8 @@ function phwSearchbox($atts) {
 }
 
 function enqueueExtFiles() {
-   wp_enqueue_script('searchboxjs', plugins_url('searchbox.js', __FILE__), array('jquery'), filemtime(dirname(__FILE__) . '/searchbox.js'), false);
-   wp_enqueue_script('ebscohostsearch', plugins_url('ebscohostsearch.js', __FILE__), array('jquery'), filemtime(dirname(__FILE__) . '/ebscohostsearch.js'), false);
+   wp_enqueue_script('searchboxjs', plugins_url('searchbox.js', __FILE__), array('jquery'), filemtime(dirname(__FILE__) . '/searchbox.js'), true);
+   wp_enqueue_script('ebscohostsearch', plugins_url('ebscohostsearch.js', __FILE__), array('jquery'), filemtime(dirname(__FILE__) . '/ebscohostsearch.js'), true);
    wp_enqueue_style('searchboxcss', plugins_url('searchbox.css', __FILE__), array(), filemtime(dirname(__FILE__) . '/searchbox.css'), 'all');
 }
 
