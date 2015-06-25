@@ -25,9 +25,9 @@ return $MCSearchBox;
 function getWorldCatSearchBox() {
 $worldCatSearchBox = <<<EOT
 <div id="worldcat_search">
-   <form id="worldcat" method="get" action="https://milligan.worldcat.org/search" target="_blank">
+   <form id="worldcat" method="get" action="https://milligan.on.worldcat.org/search" target="_blank">
       <h2>Milligan &amp; Libraries Worldwide</h2>
-      <input title="Search Milligan Catalog" required type="text" name="q" id="q" class="searchbox">
+      <input title="Search Milligan Catalog" required type="text" name="queryString" id="queryString" class="searchbox">
       <input type="submit" value="Search" name="search" id="worldcatsearch" class="searchbutton">
    </form>
 </div>

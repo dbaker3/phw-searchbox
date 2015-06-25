@@ -65,8 +65,8 @@ function isItMobile() {
 /* Draw accordion searchbox for mobile devices */
 function drawMobile() {
    jQuery('.tab-content').insertAfter('li.active a');
-   /* Force mobile sites for searchboxes where available */
-   document.getElementById('worldcat').action = "http://milligan.worldcat.org/m/search";
+   /* Force mobile sites for searchboxes where available 
+   document.getElementById('worldcat').action = "http://milligan.worldcat.org/m/search"; */
    /* Adjust bottom border radius of last accordion tab if it's active or not */
    if (jQuery('.tab-links li:last-child').hasClass('active')) {
       jQuery('.tab-links li:last-child a').css('-webkit-border-bottom-right-radius','0');
