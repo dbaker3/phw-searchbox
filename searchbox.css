@@ -38,7 +38,7 @@ ul.tab-links {
 
 }
  
-.tab-links a {
+.tab-links a.tab-link {
    padding:9px 0;
    display:inline-block;
    background:#40abba;
@@ -60,31 +60,31 @@ ul.tab-links {
 
 }
 
-.tab-links li:last-child a {
+.tab-links li:last-child a.tab-link {
    border-right: 1px solid black;
    -webkit-border-bottom-right-radius: 0;
    -moz-border-radius-bottomright: 0;
    border-bottom-right-radius: 0;
 }
  
-.tab-links a:hover {
+.tab-links a.tab-link:hover {
    background:#ea7125;
    text-decoration:none;
 }
 
-.tab-links a:visited {
+.tab-links a.tab-link:visited {
    color: #FEFEFE;
 }
 
-.tab-links a:hover {
+.tab-links a.tab-link:hover {
    color: #fefefe;
 }
 
-.tab-links li.active a:visited {
+.tab-links li.active a.tab-link:visited {
    color: #4c4c4c;
 }
  
-li.active a, li.active a:hover {
+li.active a.tab-link, li.active a.tab-link:hover {
   background:#f9f9f9;
   color:#4c4c4c;
   /*border-bottom:1px solid #fff;*/
@@ -160,22 +160,37 @@ select > .selectbox-text {
    display: none;
 }
 
+.searchbox-links {
+   margin-top: 0.5em;
+}
+
+.searchbox-links a {
+   font-size: 90%;
+   text-decoration: none;
+}
+
+.searchbox-links a:hover {
+   color: #ea7125;
+   text-decoration: underline;
+}
+
+
 /* Accordion interface on smaller screens */
 @media all and (max-width:640px){
          .tabs {
             width:100%;
          }
-			.tab-links li, .tab-links a {
+			.tab-links li, .tab-links a.tab-link {
             width:100%; 
             float:none;
             text-align:left;
          }
-         .tab-links a {
+         .tab-links a.tab-link {
             padding-left:2.5em;
             font-size:1em;
             border-right: 1px solid black;
          }
-         .tab-links a:before {
+         .tab-links a.tab-link:before {
             font-family: icon-font;
             content: "";
             position: absolute;
@@ -188,22 +203,22 @@ select > .selectbox-text {
             font-size:1.3em;
             width:98%;
          }
-         .tab-links li.active a, li.active a:visited {
+         .tab-links li.active a.tab-link, li.active a.tab-link:visited {
             background:#ea7125;
             color:#FEFEFE !important;
             border-bottom:none;
          }
-         li.active a:before {
+         li.active a.tab-link:before {
          font-family: icon-font;
          content: "";
          position: absolute;
          left:1em;
          }
-         .tab-links a:hover {
+         .tab-links a.tab-link:hover {
             background:#ea7125;
             color:#fefefe;
          }
-         li.active a:hover {
+         li.active a.tab-link:hover {
             background:#ea7125;
             color:#fefefe;
             border-bottom:none
@@ -222,12 +237,12 @@ select > .selectbox-text {
          .tab-content{
             height:8em;
          }
-         .tab-links li a {
+         .tab-links li a.tab-link {
             -webkit-border-radius:0;
             -moz-border-radius:0;
             border-radius:0;
          }
-         .tab-links li:last-child a {
+         .tab-links li:last-child a.tab-link {
             -webkit-border-bottom-right-radius: 2px;
             -webkit-border-bottom-left-radius: 2px;
             -moz-border-radius-bottomright: 2px;
@@ -235,7 +250,7 @@ select > .selectbox-text {
             border-bottom-right-radius: 2px;
             border-bottom-left-radius: 2px;
          }
-         .tab-links li:first-child a {
+         .tab-links li:first-child a.tab-link {
             -webkit-border-top-right-radius: 2px;
             -webkit-border-top-left-radius: 2px;
             -moz-border-radius-topright: 2px;

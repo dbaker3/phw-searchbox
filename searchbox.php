@@ -30,6 +30,9 @@ $worldCatSearchBox = <<<EOT
       <input title="Search Milligan Catalog" required type="text" name="queryString" id="queryString" class="searchbox">
       <input type="submit" value="Search" name="search" id="worldcatsearch" class="searchbutton">
    </form>
+   <div class="searchbox-links">
+      <a href="https://milligan.on.worldcat.org/advancedsearch" target="_blank">Advanced Search</a> | <a href="https://milligan.on.worldcat.org/myaccount" target="_blank">My Patron Account</a> 
+   </div>
 </div>
 EOT;
 return $worldCatSearchBox;
