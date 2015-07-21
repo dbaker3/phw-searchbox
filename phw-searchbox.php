@@ -18,7 +18,7 @@ function phwSearchbox($atts) {
    $output = '<div class="tabs">';
    $output .= '   <ul class="tab-links">';
    $output .= '      <li><a href="#tab1" class="tab-link">MCSearch</a></li>';
-   $output .= '      <li><a href="#tab2" class="tab-link">WorldCat</a></li>';
+   $output .= '      <li><a href="#tab2" class="tab-link">Catalog</a></li>';
    $output .= '      <li><a href="#tab3" class="tab-link">Journals</a></li>';
    $output .= '      <li><a href="#tab4" class="tab-link">Databases</a></li>';
    $output .= '      <li><a href="#tab5" class="tab-link">e-Reference</a></li>';
