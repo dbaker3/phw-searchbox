@@ -136,8 +136,8 @@ select.searchbox {
    background-image:url("mcsearch_150px.png");
    background-repeat:no-repeat;
    background-size: auto 90%;
-   background-position: left center;
-   text-indent:65px;
+   background-position: 2px center;
+   text-indent:45px;
 }
 
 select.searchbox {
@@ -232,7 +232,7 @@ select > .selectbox-text {
             width:73%;
          }
          #ebscohostsearchtext {
-            text-indent:45px;
+            text-indent:30px;
          }
          .tab-content{
             height:8em;
