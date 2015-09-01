@@ -145,6 +145,8 @@ $tutorialsList = <<<EOT
          <option value="http://gots.library.milligan.edu/guide_on_the_side/tutorial/citationcreator">MCSearch: Citation Creator</option>
          <option value="http://gots.library.milligan.edu/guide_on_the_side/tutorial/abiinform-complete-business-database">ABI/INFORM Complete: Business Database</option>
          <option value="http://gots.library.milligan.edu/guide_on_the_side/tutorial/atla-scripture-search">ATLA: Scripture Search</option>
+         <option value="http://gots.library.milligan.edu/guide_on_the_side/tutorial/films-on-demand">Films on Demand</option>
+         <option value="http://gots.library.milligan.edu/guide_on_the_side/tutorial/jstor">JSTOR</option>
          <option value="http://gots.library.milligan.edu/guide_on_the_side/tutorial/learning-express-library">LearningExpress Library</option>
       </optgroup>
       <optgroup label="Library Services">
@@ -160,6 +162,8 @@ $tutorialsList = <<<EOT
          <li><a href="http://gots.library.milligan.edu/guide_on_the_side/tutorial/citationcreator/single-page">MCSearch: Citation Creator</a></li>
          <li><a href="http://gots.library.milligan.edu/guide_on_the_side/tutorial/abiinform-complete-business-database/single-page">ABI/INFORM Complete: Business Database</a></li>
          <li><a href="http://gots.library.milligan.edu/guide_on_the_side/tutorial/atla-scripture-search/single-page">ATLA Scripture Search</a></li>
+         <li><a href="http://gots.library.milligan.edu/guide_on_the_side/tutorial/films-on-demand/single-page">Films on Demand</a></li>
+         <li><a href="http://gots.library.milligan.edu/guide_on_the_side/tutorial/jstor/single-page">JSTOR</a></li>
          <li><a href="http://gots.library.milligan.edu/guide_on_the_side/tutorial/learning-express-library/single-page">LearningExpress Library</a></li>
          <li><a href="http://gots.library.milligan.edu/guide_on_the_side/tutorial/interlibraryloan/single-page">Interlibrary Loan</a></li>
          <li><a href="http://gots.library.milligan.edu/guide_on_the_side/tutorial/renewing-library-materials/single-page">Renewing Library Materials</a></li>
