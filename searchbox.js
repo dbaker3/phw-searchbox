@@ -89,7 +89,7 @@ function drawMobile() {
 function drawDesktop() {
    jQuery('.tab-content').insertAfter('.tab-links');
    /* Switch back to desktop sites */
-   if ( $theElement = document.getElementById('worldcat') ) {
+   /*if ( $theElement = document.getElementById('worldcat') ) {
       $theElement.action = "https://milligan.worldcat.org/search";
-   }
+   }*/
 }
