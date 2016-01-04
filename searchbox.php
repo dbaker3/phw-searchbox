@@ -31,7 +31,7 @@ $worldCatSearchBox = <<<EOT
       <input type="submit" value="Search" name="search" id="worldcatsearch" class="searchbutton">
    </form>
    <div class="searchbox-links">
-      <a href="https://milligan.on.worldcat.org/advancedsearch" target="_blank">Advanced Search</a> | <a href="https://milligan.on.worldcat.org/myaccount" target="_blank">My Patron Account</a> | <strong><a href="http://pac.milligan.edu/TLCScripts/interpac.dll?SearchForm&Directions=1&config=pac&Branch=,0" target="_blank">Click here for Seminary Catalog</a></strong>
+      <a href="https://milligan.on.worldcat.org/advancedsearch" target="_blank">Advanced Search</a> | <a href="https://milligan.on.worldcat.org/myaccount" target="_blank">My Patron Account</a>
    </div>
 </div>
 EOT;
