@@ -145,6 +145,7 @@ $tutorialsList = <<<EOT
          <option value="http://gots.library.milligan.edu/tutorial/citationcreator">MCSearch: Citation Creator</option>
          <option value="http://gots.library.milligan.edu/tutorial/abiinform-complete-business-database">ABI/INFORM Complete: Business Database</option>
          <option value="http://gots.library.milligan.edu/tutorial/atla-scripture-search">ATLA: Scripture Search</option>
+         <option value="http://gots.library.milligan.edu/tutorial/catalog-introduction">Catalog Introduction</option>
          <option value="http://gots.library.milligan.edu/tutorial/films-on-demand">Films on Demand</option>
          <option value="http://gots.library.milligan.edu/tutorial/jstor">JSTOR</option>
          <option value="http://gots.library.milligan.edu/tutorial/learning-express-library">LearningExpress Library</option>
