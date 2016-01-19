@@ -175,6 +175,30 @@ select > .selectbox-text {
 }
 
 
+/* EDS Autocomplete */
+#auto-results {
+    border: 1px black solid;
+    background-color:white;
+    position:absolute;
+    padding:10px;
+    z-index:1000;
+    width:70%;
+    font-size:150%;
+}
+#auto-results li:hover, #auto-results li:active{
+    background-color: #ea7125;
+    color: white;
+    cursor: pointer;
+}
+#auto-results li {
+    border: medium none;
+    list-style: outside none none;
+    padding-left: 5px;
+}
+#auto-results > .result-title {
+   display: none;
+}
+
 /* Accordion interface on smaller screens */
 @media all and (max-width:640px){
          .tabs {

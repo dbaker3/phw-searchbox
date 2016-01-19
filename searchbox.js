@@ -35,6 +35,7 @@ jQuery(document).ready(function() {
       e.preventDefault();
    });
    jQuery('input[name=ebscohostsearchtext]').focus(); 
+   
 });
 
 

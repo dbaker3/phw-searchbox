@@ -14,7 +14,9 @@ $MCSearchBox = <<<EOT
 		<input id="ebscohostsearchsrc" name="ebscohostsearchsrc" type="hidden" value="db">
 		<input id="ebscohostsearchmode" name="ebscohostsearchmode" type="hidden" value="+">
 		<input id="ebscohostkeywords" name="ebscohostkeywords" type="hidden" value="">
-		<input title="Search MCSearch" required id="ebscohostsearchtext" class="searchbox" name="ebscohostsearchtext" type="text">
+		<span id="edsSearchWrapper">
+		   <input title="Search MCSearch" required id="ebscohostsearchtext" class="searchbox" name="ebscohostsearchtext" type="text" autocomplete="off" onkeyup="autocomp()">
+		</span>
 		<input id="edssearch" type="submit" value="Search" class="searchbutton">
 	</form>
 </div>
