@@ -15,7 +15,7 @@ $MCSearchBox = <<<EOT
 		<input id="ebscohostsearchmode" name="ebscohostsearchmode" type="hidden" value="+">
 		<input id="ebscohostkeywords" name="ebscohostkeywords" type="hidden" value="">
 		<span id="edsSearchWrapper">
-		   <input title="Search MCSearch" required id="ebscohostsearchtext" class="searchbox" name="ebscohostsearchtext" type="text" autocomplete="off" onkeyup="autocomp()">
+		   <input title="Search MCSearch" required id="ebscohostsearchtext" class="searchbox" name="ebscohostsearchtext" type="text" autocomplete="off">
 		</span>
 		<input id="edssearch" type="submit" value="Search" class="searchbutton">
 	</form>
@@ -46,7 +46,7 @@ $journalSearchBox = <<<EOT
    <form id="EBSCOPubFinderSearch" action="" onsubmit="return ebscoHostSearchGo(this);" method="post">
       <h2>Journal Titles</h2>
 		<input id="ebscohostftfwindow" name="ebscohostwindow" type="hidden" value="1">
-		<input id="ebscohostftfurl" name="ebscohosturl" type="hidden" value="https://milligan.idm.oclc.org/login?url=https://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=44&db=edspub&custid=s8886565&groupid=main&profid=pfi&mode=bool&authtype=ip,guest">
+		<input id="ebscohostftfurl" name="ebscohosturl" type="hidden" value="https://milligan.idm.oclc.org/login?url=https://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=44&db=edspub&custid=s8886565&groupid=main&profid=edsmain&mode=bool&authtype=ip,guest">
 		<input id="ebscohostftfsearchsrc" name="ebscohostsearchsrc" type="hidden" value="db">
 		<input id="ebscohostftfsearchmode" name="ebscohostsearchmode" type="hidden" value="+">
 		<input id="ebscohostftfkeywords" name="ebscohostkeywords" type="hidden" value="">
