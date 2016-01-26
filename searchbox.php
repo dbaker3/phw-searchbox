@@ -43,14 +43,16 @@ return $worldCatSearchBox;
 function getJournalSearchBox() {
 $journalSearchBox = <<<EOT
 <div id="atoz_search">
-   <form name="frmAdvSearch" action="https://atoz.ebsco.com/titles/searchresults/12279" method="get" accept-charset="ISO-8859-1" target="_blank">
+   <form id="EBSCOPubFinderSearch" action="" onsubmit="return ebscoHostSearchGo(this);" method="post">
       <h2>Journal Titles</h2>
-      <input title="Search Journal Titles" required id="Find" type="text" name="Find" class="searchbox" value="">
-      <input id="atozsearch" value="Search" type="submit" class="searchbutton">
-      <input type="hidden" name="GetResourcesBy" value="TitleNameSearch">
-      <input type="hidden" name="resourceTypeName" value="journalsOnly">
-      <input type="hidden" name="SearchType" value="BeginsWith">
-   </form>
+		<input id="ebscohostftfwindow" name="ebscohostwindow" type="hidden" value="1">
+		<input id="ebscohostftfurl" name="ebscohosturl" type="hidden" value="https://milligan.idm.oclc.org/login?url=https://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=44&db=edspub&custid=s8886565&groupid=main&profid=pfi&mode=bool&authtype=ip,guest">
+		<input id="ebscohostftfsearchsrc" name="ebscohostsearchsrc" type="hidden" value="db">
+		<input id="ebscohostftfsearchmode" name="ebscohostsearchmode" type="hidden" value="+">
+		<input id="ebscohostftfkeywords" name="ebscohostkeywords" type="hidden" value="">
+		<input id="ebscohostftfsearchtext" class="searchbox" name="ebscohostsearchtext" type="text"  placeholder="Enter title, publisher, subject or ISSN/ISBN">
+		<input type="submit" value="Search" class="searchbutton">
+	</form>
 </div>
 EOT;
 return $journalSearchBox;
