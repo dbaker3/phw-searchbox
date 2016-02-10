@@ -10,13 +10,11 @@ $MCSearchBox = <<<EOT
 	<form id="ebscohostCustomSearchBox" onsubmit="return ebscoHostSearchGo(this);" method="post">
       <h2>Search Almost Everything</h2>
 		<input id="ebscohostwindow" name="ebscohostwindow" type="hidden" value="1">
-		<input id="ebscohosturl" name="ebscohosturl" type="hidden" value="https://milligan.idm.oclc.org/login?url=https://search.ebscohost.com/login.aspx?direct=true&amp;site=eds-live&amp;scope=site&amp;type=0&amp;custid=s8886565&amp;groupid=main&amp;profid=edsmain&amp;mode=bool&amp;lang=en&amp;authtype=ip,guest">
+		<input id="ebscohosturl" name="ebscohosturl" type="hidden" value="https://milligan.idm.oclc.org/login?url=http://search.ebscohost.com/login.aspx?direct=true&amp;site=eds-live&amp;scope=site&amp;type=0&amp;custid=s8886565&amp;groupid=main&amp;profid=edsmain&amp;mode=bool&amp;lang=en&amp;authtype=ip,guest">
 		<input id="ebscohostsearchsrc" name="ebscohostsearchsrc" type="hidden" value="db">
 		<input id="ebscohostsearchmode" name="ebscohostsearchmode" type="hidden" value="+">
 		<input id="ebscohostkeywords" name="ebscohostkeywords" type="hidden" value="">
-		<span id="edsSearchWrapper">
-		   <input title="Search MCSearch" required id="ebscohostsearchtext" class="searchbox" name="ebscohostsearchtext" type="text" autocomplete="off">
-		</span>
+		<input title="Search MCSearch" required id="ebscohostsearchtext" class="searchbox" name="ebscohostsearchtext" type="text">
 		<input id="edssearch" type="submit" value="Search" class="searchbutton">
 	</form>
 </div>
@@ -46,7 +44,7 @@ $journalSearchBox = <<<EOT
    <form id="EBSCOPubFinderSearch" action="" onsubmit="return ebscoHostSearchGo(this);" method="post">
       <h2>Journal Titles</h2>
 		<input id="ebscohostftfwindow" name="ebscohostwindow" type="hidden" value="1">
-		<input id="ebscohostftfurl" name="ebscohosturl" type="hidden" value="https://milligan.idm.oclc.org/login?url=https://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=44&db=edspub&custid=s8886565&groupid=main&profid=edsmain&mode=bool&authtype=ip,guest">
+		<input id="ebscohostftfurl" name="ebscohosturl" type="hidden" value="https://milligan.idm.oclc.org/login?url=http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=44&db=edspub&custid=s8886565&groupid=main&profid=edsmain&mode=bool&authtype=ip,guest">
 		<input id="ebscohostftfsearchsrc" name="ebscohostsearchsrc" type="hidden" value="db">
 		<input id="ebscohostftfsearchmode" name="ebscohostsearchmode" type="hidden" value="+">
 		<input id="ebscohostftfkeywords" name="ebscohostkeywords" type="hidden" value="">

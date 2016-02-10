@@ -18,7 +18,7 @@ function phwSearchbox($atts) {
    $output = '<div class="tabs">';
    $output .= '   <ul class="tab-links">';
    $output .= '      <li><a href="#tab1" class="tab-link">MCSearch</a></li>';
-   $output .= '      <li><a href="#tab2" class="tab-link">Catalog</a></li>';
+   $output .= '      <li><a href="#tab2" class="tab-link">Books/Media</a></li>';
    $output .= '      <li><a href="#tab3" class="tab-link">Journals</a></li>';
    $output .= '      <li><a href="#tab4" class="tab-link">Databases</a></li>';
    $output .= '      <li><a href="#tab5" class="tab-link">e-Reference</a></li>';
@@ -59,7 +59,6 @@ function phwSearchbox($atts) {
 function enqueueExtFiles() {
    wp_enqueue_script('searchboxjs', plugins_url('searchbox.js', __FILE__), array('jquery'), filemtime(dirname(__FILE__) . '/searchbox.js'), true);
    wp_enqueue_script('ebscohostsearch', plugins_url('ebscohostsearch.js', __FILE__), array('jquery'), filemtime(dirname(__FILE__) . '/ebscohostsearch.js'), true);
-   wp_enqueue_script('edsautocomp', plugins_url('autocompcustom.js', __FILE__), array('jquery'), filemtime(dirname(__FILE__) . '/autocompcustom.js'), true);  
    wp_enqueue_style('searchboxcss', plugins_url('searchbox.css', __FILE__), array(), filemtime(dirname(__FILE__) . '/searchbox.css'), 'all');
 }
 
