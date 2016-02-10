@@ -151,6 +151,7 @@ $tutorialsList = <<<EOT
          <option value="http://gots.library.milligan.edu/tutorial/jstor">JSTOR</option>
          <option value="http://gots.library.milligan.edu/tutorial/learning-express-library">LearningExpress Library</option>
          <option value="http://gots.library.milligan.edu/tutorial/catalog-introduction">Library Catalog Introduction</option>
+         <option value="http://gots.library.milligan.edu/tutorial/mental-measurements-yearbook-with-tests-in-print">Mental Measurements Yearbook with Tests in Print</option>
       </optgroup>
       <optgroup label="Library Services">
          <option value="http://gots.library.milligan.edu/tutorial/interlibraryloan">Interlibrary Loan</option>
@@ -169,6 +170,7 @@ $tutorialsList = <<<EOT
          <li><a href="http://gots.library.milligan.edu/tutorial/jstor/single-page">JSTOR</a></li>
          <li><a href="http://gots.library.milligan.edu/tutorial/learning-express-library/single-page">LearningExpress Library</a></li>
          <li><a href="http://gots.library.milligan.edu/tutorial/catalog-introduction/single-page">Library Catalog Introduction</a></li>        
+         <li><a href="http://gots.library.milligan.edu/tutorial/mental-measurements-yearbook-with-tests-in-print/single-page">Mental Measurements Yearbook with Tests in Print</a></li>
          <li><a href="http://gots.library.milligan.edu/tutorial/interlibraryloan/single-page">Interlibrary Loan</a></li>
          <li><a href="http://gots.library.milligan.edu/tutorial/renewing-library-materials/single-page">Renewing Library Materials</a></li>
       </ul>
