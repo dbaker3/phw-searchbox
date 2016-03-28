@@ -35,6 +35,7 @@ jQuery(document).ready(function() {
       e.preventDefault();
    });
    jQuery('input[name=ebscohostsearchtext]').focus(); 
+   GaEventTracking();
    
 });
 
@@ -93,4 +94,15 @@ function drawDesktop() {
    /*if ( $theElement = document.getElementById('worldcat') ) {
       $theElement.action = "https://milligan.worldcat.org/search";
    }*/
+}
+
+function GaEventTracking() {
+   if (typeof(ga) == "function" && ga.answer == 42) {
+      jQuery('#ebscohostCustomSearchBox').submit(function(){ga('send', 'event', 'PHW Searchbox', 'Submit', 'MCSearch')});
+      jQuery('#worldcat').submit(function(){ga('send', 'event', 'PHW Searchbox', 'Submit', 'WorldCat')});
+      jQuery('#EBSCOPubFinderSearch').submit(function(){ga('send', 'event', 'PHW Searchbox', 'Submit', 'FullTextFinder')});
+      jQuery('#databases').submit(function(){ga('send', 'event', 'PHW Searchbox', 'Submit', 'Databases')});
+      jQuery('#reference').submit(function(){ga('send', 'event', 'PHW Searchbox', 'Submit', 'e-Reference')});
+      jQuery('#tutorials').submit(function(){ga('send', 'event', 'PHW Searchbox', 'Submit', 'Tutorials')});
+   }
 }
