@@ -142,6 +142,7 @@ $tutorialsList = <<<EOT
    <select title="Tutorial Topics" class="searchbox" name="tutorialoption">
       <option selected disabled class="selectbox-text">Choose a tutorial...</option>
       <optgroup label="Research Tools">
+         <option value="http://gots.library.milligan.edu/tutorial/welcome-to-the-milligan-libraries-webpage">Welcome to the Milligan Libraries Website!</option>
          <option value="http://gots.library.milligan.edu/tutorial/introduction-to-mcsearch">MCSearch: Introduction to MCSearch!</option>
          <option value="http://gots.library.milligan.edu/tutorial/mcsearch-advanced-strategies">MCSearch: Advanced Strategies</option>
          <option value="http://gots.library.milligan.edu/tutorial/citationcreator">MCSearch: Citation Creator</option>
@@ -161,6 +162,7 @@ $tutorialsList = <<<EOT
    <input type="submit" class="searchbutton" value="View">
    <noscript>
       <ul>
+         <li><a href="http://gots.library.milligan.edu/tutorial/welcome-to-the-milligan-libraries-webpage">Welcome to the Milligan Libraries Website!</a></li>
          <li><a href="http://gots.library.milligan.edu/tutorial/introduction-to-mcsearch/single-page">Introduction to MCSearch!</a></li>
          <li><a href="http://gots.library.milligan.edu/tutorial/mcsearch-advanced-strategies/single-page">MCSearch: Advanced Strategies</a></li>
          <li><a href="http://gots.library.milligan.edu/tutorial/citationcreator/single-page">MCSearch: Citation Creator</a></li>
