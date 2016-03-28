@@ -97,12 +97,15 @@ function drawDesktop() {
 }
 
 function GaEventTracking() {
-   if (typeof(ga) == "function" && ga.answer == 42) {
-      jQuery('#ebscohostCustomSearchBox').submit(function(){ga('send', 'event', 'PHW Searchbox', 'Submit', 'MCSearch')});
-      jQuery('#worldcat').submit(function(){ga('send', 'event', 'PHW Searchbox', 'Submit', 'WorldCat')});
-      jQuery('#EBSCOPubFinderSearch').submit(function(){ga('send', 'event', 'PHW Searchbox', 'Submit', 'FullTextFinder')});
-      jQuery('#databases').submit(function(){ga('send', 'event', 'PHW Searchbox', 'Submit', 'Databases')});
-      jQuery('#reference').submit(function(){ga('send', 'event', 'PHW Searchbox', 'Submit', 'e-Reference')});
-      jQuery('#tutorials').submit(function(){ga('send', 'event', 'PHW Searchbox', 'Submit', 'Tutorials')});
-   }
+   jQuery('#ebscohostCustomSearchBox').submit(function(){ GaSendEvent('PHW Searchbox', 'Submit', 'MCSearch')});
+   jQuery('#worldcat').submit(function(){ GaSendEvent('PHW Searchbox', 'Submit', 'WorldCat')});
+   jQuery('#EBSCOPubFinderSearch').submit(function(){ GaSendEvent('PHW Searchbox', 'Submit', 'FullTextFinder')});
+   jQuery('#databases').submit(function(){ GaSendEvent('PHW Searchbox', 'Submit', 'Databases')});
+   jQuery('#reference').submit(function(){ GaSendEvent('PHW Searchbox', 'Submit', 'e-Reference')});
+   jQuery('#tutorials').submit(function(){ GaSendEvent('PHW Searchbox', 'Submit', 'Tutorials')});
+}
+
+function GaSendEvent(category, action, label) {
+   if (typeof(ga) === 'function' && ga.answer == 42) 
+         ga('send', 'event', category, action, label);
 }
