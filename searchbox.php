@@ -60,7 +60,7 @@ function getDatabasesList() {
 $databasesList = <<<EOT
 <form id="databases" method="get" action="https://library.milligan.edu/databases/" target="_blank">
    <h2>Databases</h2>
-   <select title="Database Topics" class="searchbox" name="dbmenuoption">
+   <select title="Database Topics" class="searchbox" id="dbmenuoption" name="dbmenuoption">
       <option selected disabled class="selectbox-text">Choose a topic...</option>
       <option value="general">General &amp; Multidisciplinary</option>
       <option value="arts">Arts &amp; Theater</option>
@@ -88,7 +88,7 @@ function getReferenceList() {
 $referenceList = <<<EOT
 <form id="reference" method="get" action="https://library.milligan.edu/ereference/" target="_blank">
    <h2>e-Reference</h2>
-   <select title="Reference Topics" class="searchbox" name="refmenuoption">
+   <select title="Reference Topics" class="searchbox" id="refmenuoption" name="refmenuoption">
       <option selected disabled class="selectbox-text">Choose a topic...</option>
       <option value="anthropology">Anthropology &amp; Cultural Studies</option>
       <option value="art">Art</option>
@@ -139,7 +139,7 @@ function getTutorialsList() {
 $tutorialsList = <<<EOT
 <form id="tutorials" method="get" action="">
    <h2>Learn to use Services &amp; Research Tools</h2>
-   <select title="Tutorial Topics" class="searchbox" name="tutorialoption">
+   <select title="Tutorial Topics" class="searchbox" id="tutorialoption" name="tutorialoption">
       <option selected disabled class="selectbox-text">Choose a tutorial...</option>
       <optgroup label="Research Tools">
          <option value="http://gots.library.milligan.edu/tutorial/welcome-to-the-milligan-libraries-webpage">Welcome to the Milligan Libraries Website!</option>

@@ -109,3 +109,16 @@ function GaSendEvent(category, action, label) {
    if (typeof(ga) === 'function' && ga.answer == 42) 
          ga('send', 'event', category, action, label);
 }
+
+/* Submit forms on select option change (bypass "Submit" button on form) */
+jQuery('#dbmenuoption').change(function() {
+   jQuery('#databases').submit();
+});
+
+jQuery('#refmenuoption').change(function() {
+   jQuery('#reference').submit();
+});
+
+jQuery('#tutorialoption').change(function() {
+   jQuery('#tutorials').submit();
+});
