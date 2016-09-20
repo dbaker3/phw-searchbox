@@ -10,12 +10,12 @@ var tutorialVar = getQueryVariable("tutorialoption");
 
 if (databasesVar) {
    jQuery("#" + databasesVar + " > li").addClass("open-item");
-   jQuery("#" + databasesVar + " .acc-sublist").toggleClass("hidden");
+   jQuery("#" + databasesVar + " .acc-sublist").toggle(); //toggleClass("hidden");
    window.location.href = "#" + databasesVar;
 }
 else if (ereferenceVar) {
    jQuery("#" + ereferenceVar + " > li").addClass("open-item");
-   jQuery("#" + ereferenceVar + " .acc-sublist").toggleClass("hidden");
+   jQuery("#" + ereferenceVar + " .acc-sublist").toggle(); //toggleClass("hidden");
    window.location.href = "#" + ereferenceVar;
 }
 else if (tutorialVar) {
