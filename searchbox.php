@@ -146,7 +146,6 @@ $tutorialsList = <<<EOT
          <option value="http://gots.library.milligan.edu/tutorial/introduction-to-mcsearch">MCSearch: Introduction to MCSearch!</option>
          <option value="http://gots.library.milligan.edu/tutorial/mcsearch-advanced-strategies">MCSearch: Advanced Strategies</option>
          <option value="http://gots.library.milligan.edu/tutorial/citationcreator">MCSearch: Citation Creator</option>
-         <option value="http://gots.library.milligan.edu/tutorial/abiinform-complete-business-database">ABI/INFORM Complete: Business Database</option>
          <option value="http://gots.library.milligan.edu/tutorial/atla-scripture-search">ATLA: Scripture Search</option>
          <option value="http://gots.library.milligan.edu/tutorial/films-on-demand">Films on Demand</option>
          <option value="http://gots.library.milligan.edu/tutorial/jstor">JSTOR</option>
@@ -158,6 +157,10 @@ $tutorialsList = <<<EOT
          <option value="http://gots.library.milligan.edu/tutorial/interlibraryloan">Interlibrary Loan</option>
          <option value="http://gots.library.milligan.edu/tutorial/renewing-library-materials">Renewing Library Materials</option>
       </optgroup>
+      <optgroup label="eBooks">
+         <option value="https://library.milligan.edu/checkout-ebsco-ebooks-on-your-computer-for-offline-reading/">Checkout EBSCO eBooks to your computer</option>
+         <option value="https://library.milligan.edu/checkout-ebsco-ebooks-to-your-mobile-device-android-or-ios-for-offline-reading/">Checkout EBSCO eBooks to your mobile device (Android or iOS)</option>
+      </optgroup>
    </select>
    <input type="submit" class="searchbutton" value="View">
    <noscript>
@@ -166,7 +169,6 @@ $tutorialsList = <<<EOT
          <li><a href="http://gots.library.milligan.edu/tutorial/introduction-to-mcsearch/single-page">Introduction to MCSearch!</a></li>
          <li><a href="http://gots.library.milligan.edu/tutorial/mcsearch-advanced-strategies/single-page">MCSearch: Advanced Strategies</a></li>
          <li><a href="http://gots.library.milligan.edu/tutorial/citationcreator/single-page">MCSearch: Citation Creator</a></li>
-         <li><a href="http://gots.library.milligan.edu/tutorial/abiinform-complete-business-database/single-page">ABI/INFORM Complete: Business Database</a></li>
          <li><a href="http://gots.library.milligan.edu/tutorial/atla-scripture-search/single-page">ATLA Scripture Search</a></li>
          <li><a href="http://gots.library.milligan.edu/tutorial/films-on-demand/single-page">Films on Demand</a></li>
          <li><a href="http://gots.library.milligan.edu/tutorial/jstor/single-page">JSTOR</a></li>
@@ -175,6 +177,8 @@ $tutorialsList = <<<EOT
          <li><a href="http://gots.library.milligan.edu/tutorial/mental-measurements-yearbook-with-tests-in-print/single-page">Mental Measurements Yearbook with Tests in Print</a></li>
          <li><a href="http://gots.library.milligan.edu/tutorial/interlibraryloan/single-page">Interlibrary Loan</a></li>
          <li><a href="http://gots.library.milligan.edu/tutorial/renewing-library-materials/single-page">Renewing Library Materials</a></li>
+         <li><a href="https://library.milligan.edu/checkout-ebsco-ebooks-on-your-computer-for-offline-reading/"></a>Checkout EBSCO eBooks to your computer</li>
+         <li><a href="https://library.milligan.edu/checkout-ebsco-ebooks-to-your-mobile-device-android-or-ios-for-offline-reading/"></a>Checkout EBSCO eBooks to your mobile device (Android or iOS)</li>        
       </ul>
    </noscript>
 </form>
