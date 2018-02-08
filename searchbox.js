@@ -111,6 +111,7 @@ function GaSendEvent(category, action, label) {
 }
 
 /* Submit forms on select option change (bypass "Submit" button on form) */
+/*
 jQuery('#dbmenuoption').change(function() {
    jQuery('#databases').submit();
 });
@@ -122,3 +123,4 @@ jQuery('#refmenuoption').change(function() {
 jQuery('#tutorialoption').change(function() {
    jQuery('#tutorials').submit();
 });
+*/
