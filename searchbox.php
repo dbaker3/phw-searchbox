@@ -61,23 +61,21 @@ $databasesList = <<<EOT
 <form id="databases" method="get" action="https://library.milligan.edu/databases/" target="_blank">
    <h2>Databases</h2>
    <select title="Database Topics" class="searchbox" id="dbmenuoption" name="dbmenuoption">
-      <option selected disabled class="selectbox-text">Choose a topic...</option>
+      <option selected disabled class="selectbox-text">Choose a category...</option>
       <option value="general">General &amp; Multidisciplinary</option>
       <option value="arts">Arts &amp; Theater</option>
       <option value="business">Business &amp; Economics</option>
       <option value="communication">Communication, Information, Media &amp; Journalism</option>
-      <option value="computer">Computer Science</option>
       <option value="education">Education</option>
-      <option value="engineering">Engineering &amp; Technology</option>
+      <option value="engineering">Engineering, Computer Science &amp; Technology</option>
       <option value="history">History &amp; Humanities</option>
       <option value="literature">Literature &amp; Language</option>
       <option value="music">Music</option>
-      <option value="nursing">Nursing, Occupational Therapy &amp; Physician Assistant</option>
+      <option value="nursing">Nursing, Occupational Therapy, Exercise Science &amp; Physician Assistant Studies</option>
       <option value="political">Political Science, Government &amp; Law</option>
-      <option value="psychology">Psychology, Sociology, &amp; Counseling</option>
+      <option value="psychology">Psychology, Sociology &amp; Counseling</option>
       <option value="religion">Religion &amp; Philosophy</option>
       <option value="sciences">Sciences</option>
-      <option value="sports">Sports &amp; Sports Science</option>
    </select>
    <input type="submit" class="searchbutton" value="Browse">
 </form>
@@ -90,7 +88,7 @@ $referenceList = <<<EOT
 <form id="reference" method="get" action="https://library.milligan.edu/ereference/" target="_blank">
    <h2>e-Reference</h2>
    <select title="Reference Topics" class="searchbox" id="refmenuoption" name="refmenuoption">
-      <option selected disabled class="selectbox-text">Choose a topic...</option>
+      <option selected disabled class="selectbox-text">Choose a category...</option>
       <option value="anthropology">Anthropology &amp; Cultural Studies</option>
       <option value="art">Art</option>
       <option value="business-general">Business &raquo; General</option>     
