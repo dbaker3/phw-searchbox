@@ -86,7 +86,7 @@ return $databasesList;
 function getReferenceList() {
 $referenceList = <<<EOT
 <form id="reference" method="get" action="https://library.milligan.edu/ereference/" target="_blank">
-   <h2>e-Encyclopedias &amp; Dictionaries</h2>
+   <h2>Select e-Encyclopedias &amp; Dictionaries</h2>
    <select title="Reference Topics" class="searchbox" id="refmenuoption" name="refmenuoption">
       <option selected disabled class="selectbox-text">Choose a category...</option>
       <option value="anthropology">Anthropology &amp; Cultural Studies</option>
