@@ -145,7 +145,6 @@ $tutorialsList = <<<EOT
       </optgroup>
       <optgroup label="eBooks">
          <option value="https://library.milligan.edu/checkout-ebsco-ebooks-on-your-computer-for-offline-reading/">Checkout EBSCO eBooks to your computer</option>
-         <option value="https://library.milligan.edu/checkout-ebsco-ebooks-to-your-mobile-device-android-or-ios-for-offline-reading/">Checkout EBSCO eBooks to your mobile device (Android or iOS)</option>
       </optgroup>
    </select>
    <input type="submit" class="searchbutton" value="View">
@@ -164,7 +163,6 @@ $tutorialsList = <<<EOT
          <li><a href="http://gots.library.milligan.edu/tutorial/interlibraryloan/single-page">Interlibrary Loan</a></li>
          <li><a href="http://gots.library.milligan.edu/tutorial/renewing-library-materials/single-page">Renewing Library Materials</a></li>
          <li><a href="https://library.milligan.edu/checkout-ebsco-ebooks-on-your-computer-for-offline-reading/"></a>Checkout EBSCO eBooks to your computer</li>
-         <li><a href="https://library.milligan.edu/checkout-ebsco-ebooks-to-your-mobile-device-android-or-ios-for-offline-reading/"></a>Checkout EBSCO eBooks to your mobile device (Android or iOS)</li>        
       </ul>
    </noscript>
 </form>
